@@ -1,0 +1,6 @@
+[submodule "TestMod"]
+	path = TestMod
+	url = git@github.com:copygirl/TestMod
+[submodule "CarryCapacity"]
+	path = CarryCapacity
+	url = git@github.com:copygirl/CarryCapacity
