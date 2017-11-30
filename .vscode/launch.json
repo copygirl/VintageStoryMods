@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"name": "Launch Client",
+		"type": "clr",
+		"request": "launch",
+		"preLaunchTask": "build",
+		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
+		"args": [
+			"-p3", "--openWorld", "modding test world.vcdbs",
+			"--addOrigin", "${workspaceFolder}/TestMod/assets"
+		],
+		"console": "internalConsole",
+		"stopAtEntry": false,
+		"internalConsoleOptions": "openOnSessionStart"
+	}]
+}
