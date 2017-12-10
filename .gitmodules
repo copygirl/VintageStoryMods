@@ -4,3 +4,9 @@
 [submodule "CarryCapacity"]
 	path = CarryCapacity
 	url = git@github.com:copygirl/CarryCapacity
+[submodule "ProperTree"]
+	path = ProperTree
+	url = git@github.com:copygirl/ProperTree
+[submodule "ProperTreeTest"]
+	path = ProperTreeTest
+	url = git@github.com:copygirl/ProperTreeTest
