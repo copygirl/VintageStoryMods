@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{ "path": "TestMod" },
+		{ "path": "CarryCapacity" },
+		{ "path": "ProperTree" },
+		{ "path": "ProperTreeTest" },
+		{ "path": "." }
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.DS_Store": true,
+			"**/bin/": true,
+			"**/obj/": true
+		}
+	}
+}
