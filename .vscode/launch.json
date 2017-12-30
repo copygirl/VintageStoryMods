@@ -1,7 +1,7 @@
 {
 	"version": "0.2.0",
 	"configurations": [{
-		"name": "Launch Client",
+		"name": "Launch Client (.NET)",
 		"type": "clr",
 		"request": "launch",
 		"preLaunchTask": "build",
@@ -13,5 +13,11 @@
 		"console": "internalConsole",
 		"stopAtEntry": false,
 		"internalConsoleOptions": "openOnSessionStart"
+	},{
+		"name": "Attach to Mono",
+		"type": "mono",
+		"request": "attach",
+		"address": "localhost",
+		"port": 55555
 	}]
 }

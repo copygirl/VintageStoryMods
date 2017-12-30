@@ -8,5 +8,28 @@
 		"group": "build",
 		"presentation": { "reveal": "silent" },
 		"problemMatcher": "$msCompile"
+	},{
+		"label": "run",
+		"type": "shell",
+		"dependsOn": "build",
+		"command": "mono",
+		"options": { "cwd": "${env:VINTAGE_STORY}" },
+		"args": [
+			"\"${env:VINTAGE_STORY}/Vintagestory.exe\"",
+			"-p3", "--openWorld", "\"modding test world.vcdbs\"",
+			"--addOrigin", "\"${workspaceFolder}/TestMod/assets\""
+		]
+	},{
+		"label": "debug",
+		"type": "shell",
+		"dependsOn": "build",
+		"command": "mono",
+		"options": { "cwd": "${env:VINTAGE_STORY}" },
+		"args": [
+			"--debug", "--debugger-agent=transport=dt_socket,server=y,address=127.0.0.1:55555",
+			"\"${env:VINTAGE_STORY}/Vintagestory.exe\"",
+			"-p3", "--openWorld", "\"modding test world.vcdbs\"",
+			"--addOrigin", "\"${workspaceFolder}/TestMod/assets\""
+		]
 	}]
 }
