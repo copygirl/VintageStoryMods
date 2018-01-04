@@ -1,17 +1,34 @@
 {
 	"version": "2.0.0",
 	"tasks": [{
+		
 		"label": "build",
+		"group": { "kind": "build", "isDefault": true },
+		
+		"problemMatcher": "$msCompile",
+		"presentation": { "reveal": "silent" },
+		
 		"type": "shell",
 		"command": "dotnet",
-		"args": [ "build", "-c", "Debug" ],
-		"group": "build",
-		"presentation": { "reveal": "silent" },
-		"problemMatcher": "$msCompile"
+		"linux": { "options": { "env": { "FrameworkPathOverride": "/lib/mono/4.5/" } } },
+		"args": [ "build", "-c", "Debug" ]
+		
 	},{
-		"label": "run",
+		
+		"label": "test",
+		"group": { "kind": "test", "isDefault": true },
+		
 		"type": "shell",
+		"command": "dotnet",
+		"linux": { "options": { "env": { "FrameworkPathOverride": "/lib/mono/4.5/" } } },
+		"args": [ "test" ]
+		
+	},{
+		
+		"label": "run",
 		"dependsOn": "build",
+		
+		"type": "shell",
 		"command": "mono",
 		"options": { "cwd": "${env:VINTAGE_STORY}" },
 		"args": [
@@ -19,10 +36,14 @@
 			"-p3", "--openWorld", "\"modding test world.vcdbs\"",
 			"--addOrigin", "\"${workspaceFolder}/TestMod/assets\""
 		]
+		
 	},{
+		
 		"label": "debug",
-		"type": "shell",
 		"dependsOn": "build",
+		
+		
+		"type": "shell",
 		"command": "mono",
 		"options": { "cwd": "${env:VINTAGE_STORY}" },
 		"args": [
@@ -31,5 +52,6 @@
 			"-p3", "--openWorld", "\"modding test world.vcdbs\"",
 			"--addOrigin", "\"${workspaceFolder}/TestMod/assets\""
 		]
+		
 	}]
 }
