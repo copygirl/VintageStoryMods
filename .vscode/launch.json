@@ -8,7 +8,7 @@
 		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
 		"args": [
 			"-p3", "--openWorld", "modding test world.vcdbs",
-			"--addOrigin", "${workspaceFolder}/TestMod/assets"
+			"--addOrigin", "${workspaceFolder}/GrowingTrees/assets",
 		],
 		"console": "internalConsole",
 		"stopAtEntry": false,

@@ -1,6 +1,7 @@
 {
 	"folders": [
 		{ "path": "TestMod" },
+		{ "path": "GrowingTrees" },
 		{ "path": "CarryCapacity" },
 		{ "path": "ProperTree" },
 		{ "path": "ProperTreeTest" },
