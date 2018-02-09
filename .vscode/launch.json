@@ -8,16 +8,24 @@
 		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
 		"args": [
 			"-p3", "--openWorld", "modding test world.vcdbs",
-			"--addOrigin", "${workspaceFolder}/GrowingTrees/assets",
+			"--addOrigin", "${workspaceFolder}/TestMod/assets",
+			               "${workspaceFolder}/GrowingTrees/assets",
 		],
 		"console": "internalConsole",
+		"internalConsoleOptions": "openOnSessionStart",
 		"stopAtEntry": false,
-		"internalConsoleOptions": "openOnSessionStart"
 	},{
-		"name": "Attach to Mono",
+		"name": "Launch Client (Mono)",
 		"type": "mono",
-		"request": "attach",
-		"address": "localhost",
-		"port": 55555
+		"request": "launch",
+		"preLaunchTask": "build",
+		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
+		"args": [
+			"-p3", "--openWorld", "modding test world.vcdbs",
+			"--addOrigin", "${workspaceFolder}/TestMod/assets",
+			               "${workspaceFolder}/GrowingTrees/assets",
+		],
+		"console": "internalConsole",
+		"internalConsoleOptions": "openOnSessionStart",
 	}]
 }

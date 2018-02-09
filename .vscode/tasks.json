@@ -22,36 +22,5 @@
 		"linux": { "options": { "env": { "FrameworkPathOverride": "/lib/mono/4.5/" } } },
 		"args": [ "test" ]
 		
-	},{
-		
-		"label": "run",
-		"dependsOn": "build",
-		"problemMatcher": [  ],
-		
-		"type": "shell",
-		"command": "mono",
-		"options": { "cwd": "${env:VINTAGE_STORY}" },
-		"args": [
-			"'${env:VINTAGE_STORY}/Vintagestory.exe'",
-			"-p3", "--openWorld", "'modding test world.vcdbs'",
-			"--addOrigin", "'${workspaceFolder}/GrowingTrees/assets'",
-		]
-		
-	},{
-		
-		"label": "debug",
-		"dependsOn": "build",
-		"problemMatcher": [  ],
-		
-		"type": "shell",
-		"command": "mono",
-		"options": { "cwd": "${env:VINTAGE_STORY}" },
-		"args": [
-			"--debug", "--debugger-agent=transport=dt_socket,server=y,address=127.0.0.1:55555",
-			"'${env:VINTAGE_STORY}/Vintagestory.exe'",
-			"-p3", "--openWorld", "'modding test world.vcdbs'",
-			"--addOrigin", "'${workspaceFolder}/GrowingTrees/assets'",
-		]
-		
 	}]
 }
