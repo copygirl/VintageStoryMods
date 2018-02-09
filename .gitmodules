@@ -3,7 +3,7 @@
 	url = git@github.com:copygirl/TestMod
 [submodule "GrowingTrees"]
 	path = GrowingTrees
-	url = git@github.com:copygirl/GrowingTrees.git
+	url = git@github.com:copygirl/GrowingTrees
 [submodule "CarryCapacity"]
 	path = CarryCapacity
 	url = git@github.com:copygirl/CarryCapacity
