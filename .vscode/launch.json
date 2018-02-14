@@ -1,31 +1,33 @@
 {
 	"version": "0.2.0",
 	"configurations": [{
-		"name": "Launch Client (.NET)",
-		"type": "clr",
+		"name": "Launch Client (Mono)",
+		"type": "mono",
 		"request": "launch",
-		"preLaunchTask": "build",
+		"preLaunchTask": "build (Debug)",
 		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
 		"args": [
 			"-p3", "--openWorld", "modding test world.vcdbs",
-			"--addOrigin", "${workspaceFolder}/TestMod/assets",
-			               "${workspaceFolder}/GrowingTrees/assets",
+			"--addOrigin", "${workspaceFolder}/TestMod/resources/assets",
+			               "${workspaceFolder}/GrowingTrees/resources/assets",
+			               "${workspaceFolder}/CarryCapacity/resources/assets",
+		],
+		"console": "internalConsole",
+		"internalConsoleOptions": "openOnSessionStart",
+	},{
+		"name": "Launch Client (.NET)",
+		"type": "clr",
+		"request": "launch",
+		"preLaunchTask": "build (Debug)",
+		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
+		"args": [
+			"-p3", "--openWorld", "modding test world.vcdbs",
+			"--addOrigin", "${workspaceFolder}/TestMod/resources/assets",
+			               "${workspaceFolder}/GrowingTrees/resources/assets",
+			               "${workspaceFolder}/CarryCapacity/resources/assets",
 		],
 		"console": "internalConsole",
 		"internalConsoleOptions": "openOnSessionStart",
 		"stopAtEntry": false,
-	},{
-		"name": "Launch Client (Mono)",
-		"type": "mono",
-		"request": "launch",
-		"preLaunchTask": "build",
-		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
-		"args": [
-			"-p3", "--openWorld", "modding test world.vcdbs",
-			"--addOrigin", "${workspaceFolder}/TestMod/assets",
-			               "${workspaceFolder}/GrowingTrees/assets",
-		],
-		"console": "internalConsole",
-		"internalConsoleOptions": "openOnSessionStart",
 	}]
 }
