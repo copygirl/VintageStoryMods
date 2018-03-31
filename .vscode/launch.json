@@ -8,9 +8,8 @@
 		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
 		"args": [
 			"-p3", "--openWorld", "modding test world.vcdbs",
-			"--addOrigin", "${workspaceFolder}/TestMod/resources/assets",
+			"--addOrigin", "${workspaceFolder}/CarryCapacity/resources/assets",
 			               "${workspaceFolder}/GrowingTrees/resources/assets",
-			               "${workspaceFolder}/CarryCapacity/resources/assets",
 		],
 		"console": "internalConsole",
 		"internalConsoleOptions": "openOnSessionStart",
@@ -22,9 +21,8 @@
 		"program": "${env:VINTAGE_STORY}/Vintagestory.exe",
 		"args": [
 			"-p3", "--openWorld", "modding test world.vcdbs",
-			"--addOrigin", "${workspaceFolder}/TestMod/resources/assets",
+			"--addOrigin", "${workspaceFolder}/CarryCapacity/resources/assets",
 			               "${workspaceFolder}/GrowingTrees/resources/assets",
-			               "${workspaceFolder}/CarryCapacity/resources/assets",
 		],
 		"console": "internalConsole",
 		"internalConsoleOptions": "openOnSessionStart",

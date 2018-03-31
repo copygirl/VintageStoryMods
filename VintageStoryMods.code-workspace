@@ -1,8 +1,7 @@
 {
 	"folders": [
-		{ "path": "TestMod" },
-		{ "path": "GrowingTrees" },
 		{ "path": "CarryCapacity" },
+		{ "path": "GrowingTrees" },
 		{ "path": "." }
 	],
 	"settings": {
