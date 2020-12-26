@@ -1,0 +1,9 @@
+{
+  "editor.insertSpaces": false,
+  "files.trimTrailingWhitespace": false,
+  
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  }
+}

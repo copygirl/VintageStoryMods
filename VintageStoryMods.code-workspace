@@ -1,6 +1,7 @@
 {
 	"folders": [
 		{ "path": "CarryCapacity" },
+		{ "path": "FarmlandDropsSoil" },
 		{ "path": "GrowingTrees" },
 		{ "path": "." }
 	],
